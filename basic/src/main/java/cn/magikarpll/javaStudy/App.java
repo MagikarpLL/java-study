@@ -1,4 +1,4 @@
-package cn.magikarpll.java-study;
+package cn.magikarpll.javaStudy;
 
 /**
  * Hello world!
