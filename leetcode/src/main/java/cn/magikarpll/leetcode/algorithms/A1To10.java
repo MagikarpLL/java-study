@@ -1,5 +1,8 @@
 package cn.magikarpll.leetcode.algorithms;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class A1To10 {
 
     /**
@@ -12,6 +15,9 @@ public class A1To10 {
      * 所以返回 [0, 1]
      */
     public void A1(){
+        int[] inputs = {10, 28, 6, 5, 13, 7, 2, 1};
+        int target = 11;
+        Arrays.sort(inputs);
 
 
     }
