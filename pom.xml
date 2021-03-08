@@ -12,6 +12,11 @@
     <module>basic</module>
     <module>leetcode</module>
       <module>algorithms</module>
+      <module>framework</module>
+    <module>spring</module>
+    <module>framework/spring</module>
+    <module>springboot</module>
+    <module>framework/springboot</module>
   </modules>
 
   <name>java-study</name>
