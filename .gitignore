@@ -1,3 +1,6 @@
 /.idea/
 /java-study.iml
 /basic/target/
+**/*.class
+**/target
+**/.gradle
