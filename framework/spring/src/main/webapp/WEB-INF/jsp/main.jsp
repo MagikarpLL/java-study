@@ -13,6 +13,6 @@
     <title>测试论坛</title>
 </head>
 <body>
-    ${user.userName}, 欢迎您登录，您目前的积分为${user.credits};
+    ${user.username}, 欢迎您登录，您目前的积分为${user.credits};
 </body>
 </html>

@@ -6,9 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;
-import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
 
-@ContextConfiguration("classpath*:/spring-context.xml")
+@ContextConfiguration("classpath*:/smart-context.xml")
 public class UserServiceTest extends AbstractTransactionalJUnit4SpringContextTests {
 
     @Autowired
