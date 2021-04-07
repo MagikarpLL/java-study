@@ -45,22 +45,22 @@ class StringOomMock {
  */
 class OOMTest {
     public static void main(String[] args) {
-        try {
-            URL url = new File("F:/Workspace/java/idea/java-study/basic/src/main/java/cn/magikarpll/javaStudy/basic/A21_Jdk8").toURI().toURL();
-            URL[] urls = {url};
-            ClassLoadingMXBean loadingBean = ManagementFactory.getClassLoadingMXBean();
-            List<ClassLoader> classLoaders = new ArrayList<ClassLoader>();
-            while (true) {
-                ClassLoader classLoader = new URLClassLoader(urls);
-                classLoaders.add(classLoader);
-                classLoader.loadClass("A21_Jdk8");
-                System.out.println("total: " + loadingBean.getTotalLoadedClassCount());
-                System.out.println("active: " + loadingBean.getLoadedClassCount());
-                System.out.println("unloaded: " + loadingBean.getUnloadedClassCount());
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            URL url = new File("F:/Workspace/java/idea/java-study/basic/src/main/java/cn/magikarpll/javaStudy/basic/A21_Jdk8").toURI().toURL();
+//            URL[] urls = {url};
+//            ClassLoadingMXBean loadingBean = ManagementFactory.getClassLoadingMXBean();
+//            List<ClassLoader> classLoaders = new ArrayList<ClassLoader>();
+//            while (true) {
+//                ClassLoader classLoader = new URLClassLoader(urls);
+//                classLoaders.add(classLoader);
+//                classLoader.loadClass("A21_Jdk8");
+//                System.out.println("total: " + loadingBean.getTotalLoadedClassCount());
+//                System.out.println("active: " + loadingBean.getLoadedClassCount());
+//                System.out.println("unloaded: " + loadingBean.getUnloadedClassCount());
+//            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 }
 
