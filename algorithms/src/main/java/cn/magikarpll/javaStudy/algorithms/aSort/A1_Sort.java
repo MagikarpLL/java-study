@@ -36,9 +36,9 @@ public class A1_Sort {
 //        System.out.println(Arrays.toString(results5));
 
         //测试快速排序
-        //System.out.println(Arrays.toString(unsortedArray));
-        //int[] results6 = QuickSort(unsortedArray, 0, unsortedArray.length - 1);
-        //System.out.println(Arrays.toString(results6));
+        System.out.println(Arrays.toString(unsortedArray));
+        int[] results6 = quickSort2(unsortedArray, 0, unsortedArray.length - 1);
+        System.out.println(Arrays.toString(results6));
 
         //测试堆排序
 //        System.out.println(Arrays.toString(unsortedArray));
@@ -61,6 +61,35 @@ public class A1_Sort {
 //        System.out.println(Arrays.toString(results10));
 
     }
+
+    public static int[] quickSort2(int[] nums, int start, int end){
+        if(start < 0 || end >= nums.length || start >= end){
+            return nums;
+        }
+        int index = partition2(nums, start, end);
+        quickSort2(nums, start, index - 1);
+        quickSort2(nums, index + 1, end);
+        return nums;
+    }
+
+    public static int partition2(int[] nums, int start, int end){
+        int randomIndex = start + (int)((end - start + 1)*Math.random());
+        int targetValue = nums[randomIndex];
+        swapArrayItem(nums, randomIndex, end);
+        int minIndex = start - 1;
+        int current = start;
+        while(current <= end){
+            if(nums[current]<=targetValue){
+                minIndex++;
+                if(minIndex != current){
+                    swapArrayItem(nums, minIndex, current);
+                }
+            }
+            current++;
+        }
+        return minIndex;
+    }
+
 
     /**
      * 冒泡排序
